@@ -18,7 +18,7 @@ function draw() {
 	textSize(32);
 
 	// if hour is less than 12, we are in the AM
-	if (hr < 12) {
+	if (hr < 13) {
 		// add a 0 behind mins if less than 10
 		if (min < 10) 
 			if (sec < 10)
