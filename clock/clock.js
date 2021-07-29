@@ -18,7 +18,7 @@ function draw() {
 	textSize(32);
 
 	// if hour is less than 12, we are in the AM
-	if (hr < 13) {
+	if (hr < 12) {
 		// add a 0 behind mins if less than 10
 		if (min < 10) 
 			if (sec < 10)
@@ -31,18 +31,19 @@ function draw() {
 			else 
 				text( (hr - 12) + ':' + min + ':' + sec + ' AM', 350, 50);
 	}
+
 	// hours are greater than 12. 
 	else {
 		if (min < 10) 
 			if (sec < 10)
-				text( (hr - 12) + ':0' + min + ':0' + sec + ' PM', 350, 50);
+				text( (hr ) + ':0' + min + ':0' + sec + ' PM', 350, 50);
 			else 
-				text( (hr - 12) + ':0' + min + ':' + sec + ' PM', 350, 50);
+				text( (hr ) + ':0' + min + ':' + sec + ' PM', 350, 50);
 		else 
 			if (sec < 10)
-				text( (hr - 12) + ':' + min + ':0' + sec + ' PM', 350, 50);
+				text( (hr ) + ':' + min + ':0' + sec + ' PM', 350, 50);
 			else 
-				text( (hr - 12) + ':' + min + ':' + sec + ' PM', 350, 50);
+				text( (hr ) + ':' + min + ':' + sec + ' PM', 350, 50);
 
 
 	}
