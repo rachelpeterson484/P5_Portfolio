@@ -22,14 +22,14 @@ function draw() {
 		// add a 0 behind mins if less than 10
 		if (min < 10) 
 			if (sec < 10)
-				text( (hr - 12) + ':0' + min + ':0' + sec + ' AM', 350, 50);
+				text( (hr) + ':0' + min + ':0' + sec + ' AM', 350, 50);
 			else 
-				text( (hr - 12) + ':0' + min + ':' + sec + ' AM', 350, 50);
+				text( (hr) + ':0' + min + ':' + sec + ' AM', 350, 50);
 		else 
 			if (sec < 10)
-				text( (hr - 12) + ':' + min + ':0' + sec + ' AM', 350, 50);
+				text( (hr) + ':' + min + ':0' + sec + ' AM', 350, 50);
 			else 
-				text( (hr - 12) + ':' + min + ':' + sec + ' AM', 350, 50);
+				text( (hr) + ':' + min + ':' + sec + ' AM', 350, 50);
 	}
 
 	// hours are greater than 12. 
